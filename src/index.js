@@ -1,9 +1,14 @@
 import axios from "axios";
+// Import and configure dotenv
+require("dotenv").config();
+
+// Access environment variables
+const apiKey = process.env.API_KEY;
 
 // form fields
 const form = document.querySelector(".form-data");
 const region = document.querySelector(".region-name");
-const apiKey = document.querySelector(".api-key");
+// const apiKey = document.querySelector(".api-key");
 
 // results
 const errors = document.querySelector(".errors");
